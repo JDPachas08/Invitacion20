@@ -158,6 +158,16 @@
       font-size: 1.1em;
     }
 
+    /* Ajustes imágenes decorativas */
+    .img-left, .img-right {
+      position: absolute;
+      top: 30px;
+      width: 120px;
+      height: auto;
+    }
+    .img-left { left: 30px; }
+    .img-right { right: 30px; }
+
     /* Responsivo */
     @media (max-width: 768px) {
       .invitation-card { padding: 30px 20px; }
@@ -166,19 +176,18 @@
       .subtitle { font-size: 1.2em; }
       .details-grid { grid-template-columns: 1fr; gap: 15px; }
       .time-value { font-size: 1.8em; }
+
+      .img-left, .img-right { width: 90px; top: 20px; }
+      .img-left { left: 15px; }
+      .img-right { right: 15px; }
     }
 
     @media (max-width: 480px) {
       .title { font-size: 1.8em; }
       .quinceañera-name { font-size: 2.5em; }
       .time-value { font-size: 1.5em; }
-    }
 
-     @media (max-width: 600px) {
-      .img-left, .img-right {
-        width: 80px;
-        top: 20px;
-      }
+      .img-left, .img-right { width: 70px; top: 15px; }
       .img-left { left: 10px; }
       .img-right { right: 10px; }
     }
@@ -194,11 +203,11 @@
 
       <!-- Imagen izquierda -->
       <img src="https://i.ibb.co/xkNd5xL/pngtree-hand-drawn-purple-butterfly-graphic-for-crafts-and-decorations-png-image-16151116.png" 
-           alt="Mariposa" style="position:absolute; top:30px; left:30px; width:120px; height:auto;">
+           alt="Mariposa" class="img-left">
 
       <!-- Imagen derecha -->
       <img src="https://i.ibb.co/p6x2RD2B/silueta-quincea-era.png" 
-           alt="Quinceañera" style="position:absolute; top:30px; right:30px; width:120px; height:auto;">
+           alt="Quinceañera" class="img-right">
 
       <div class="title">MIS 15 AÑOS</div>
       <div class="quinceañera-name">Lucciana</div>
