@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación Mis 15 Años - Lucciana</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background: url('https://i.ibb.co/hFSLy7tb/Gemini-Generated-Image-a5l9a9a5l9a9a5l9.png') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #2c1810;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .invitation-card {
+      background: rgba(255, 255, 255, 0.97);
+      border: 6px double goldenrod;
+      border-radius: 30px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      padding: 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    .corner-icon {
+      position: absolute;
+      color: purple;
+      font-size: 32px;
+      opacity: 0.8;
+      animation: flutter 3s infinite alternate ease-in-out;
+    }
+    .corner-top-left { top: 10px; left: 10px; }
+    .corner-top-right { top: 10px; right: 10px; }
+    .corner-bottom-left { bottom: 10px; left: 10px; }
+    .corner-bottom-right { bottom: 10px; right: 10px; }
+
+    @keyframes flutter {
+      0% { transform: rotate(0deg) scale(1); }
+      50% { transform: rotate(15deg) scale(1.1); }
+      100% { transform: rotate(-15deg) scale(1); }
+    }
+
+    .title {
+      font-size: 2.5em;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #663399;
+    }
+
+    .quinceañera-name {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4em;
+      color: goldenrod;
+      margin: 20px 0;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-size: 1.5em;
+      color: #8B4A9C;
+      margin-bottom: 30px;
+    }
+
+    .divider {
+      margin: 20px auto;
+      height: 2px;
+      width: 70%;
+      background: linear-gradient(to right, transparent, goldenrod, transparent);
+    }
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin: 30px 0;
+    }
+
+    .detail-section {
+      background: rgba(102, 51, 153, 0.05);
+      padding: 20px;
+      border-radius: 15px;
+      border: 2px solid #663399;
+    }
+
+    .detail-title {
+      color: #663399;
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .timer-section {
+      margin: 40px 0;
+      background: linear-gradient(135deg, #663399, #8B4A9C);
+      padding: 25px;
+      border-radius: 20px;
+      color: white;
+    }
+
+    /* Estilo nuevo del temporizador */
+    #countdown {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    .time-box {
+      background: white;
+      color: #663399;
+      padding: 15px;
+      border-radius: 10px;
+      min-width: 80px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .time-box span {
+      display: block;
+      font-size: 1.8em;
+      color: #8B4A9C;
+    }
+
+    .rsvp-button {
+      margin-top: 25px;
+      background: goldenrod;
+      padding: 15px 35px;
+      border-radius: 50px;
+      font-size: 1.2em;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+    }
+    .rsvp-button:hover { background: darkgoldenrod; }
+
+    .note {
+      margin-top: 15px;
+      font-style: italic;
+      color: #663399;
+      font-size: 1.1em;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="invitation-card">
+      <i class="fa-solid fa-butterfly corner-icon corner-top-left"></i>
+      <i class="fa-solid fa-butterfly corner-icon corner-top-right"></i>
+      <i class="fa-solid fa-butterfly corner-icon corner-bottom-left"></i>
+      <i class="fa-solid fa-butterfly corner-icon corner-bottom-right"></i>
+
+      <div class="title">MIS 15 AÑOS</div>
+      <div class="quinceañera-name">Lucciana</div>
+      <div class="subtitle">¡Con mucha alegría te invitamos a mis 15 años!</div>
+      <div class="divider"></div>
+
+      <div class="details-grid">
+        <div class="detail-section">
+          <div class="detail-title"><i class="fa-solid fa-user-group"></i> Padres</div>
+          <p>Juan Martin Pachas Aliaga<br>Karin Janett Apumayta Ferreyra</p>
+        </div>
+        <div class="detail-section">
+          <div class="detail-title"><i class="fa-solid fa-hand-holding-heart"></i> Padrinos</div>
+          <p>Hernan Edgardo Apumayta Ferreyra<br>Patricia Deidamia Villanueva Del Risco</p>
+        </div>
+        <div class="detail-section">
+          <div class="detail-title"><i class="fa-solid fa-calendar"></i> Fecha & Hora</div>
+          <p>Sábado 20 de Septiembre<br>8:30 PM</p>
+        </div>
+        <div class="detail-section">
+          <div class="detail-title"><i class="fa-solid fa-location-dot"></i> Lugar</div>
+          <p>Local de Eventos "Maquia"<br>(frente al Malecón Miranda)</p>
+        </div>
+        <div class="detail-section">
+          <div class="detail-title"><i class="fa-solid fa-shirt"></i> Vestimenta</div>
+          <p>Ellas: 👗 Elegante<br>Ellos: 👔 Elegante<br>Todos: 🎁</p>
+        </div>
+      </div>
+
+      <div class="timer-section">
+        <h3><i class="fa-solid fa-hourglass-half"></i> Falta para la fiesta:</h3>
+        <div id="countdown"></div>
+      </div>
+
+      <button class="rsvp-button">Confirmar Asistencia</button>
+      <div class="note">Habrá lista de invitados</div>
+    </div>
+  </div>
+
+  <script>
+    var countDownDate = new Date("Sep 20, 2025 20:30:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = `
+        <div class="time-box"><span>${days}</span>Días</div>
+        <div class="time-box"><span>${hours}</span>Horas</div>
+        <div class="time-box"><span>${minutes}</span>Minutos</div>
+        <div class="time-box"><span>${seconds}</span>Segundos</div>
+      `;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "¡La fiesta ha comenzado!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
