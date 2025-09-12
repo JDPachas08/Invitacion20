@@ -108,32 +108,6 @@
       color: white;
     }
 
-    /* Estilo nuevo del temporizador */
-    #countdown {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 15px;
-      flex-wrap: wrap;
-    }
-
-    .time-box {
-      background: white;
-      color: #663399;
-      padding: 15px;
-      border-radius: 10px;
-      min-width: 80px;
-      text-align: center;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    .time-box span {
-      display: block;
-      font-size: 1.8em;
-      color: #8B4A9C;
-    }
-
     .rsvp-button {
       margin-top: 25px;
       background: goldenrod;
@@ -163,6 +137,14 @@
       <i class="fa-solid fa-butterfly corner-icon corner-top-right"></i>
       <i class="fa-solid fa-butterfly corner-icon corner-bottom-left"></i>
       <i class="fa-solid fa-butterfly corner-icon corner-bottom-right"></i>
+
+      <!-- Imagen izquierda -->
+      <img src="https://i.ibb.co/xkNd5xL/pngtree-hand-drawn-purple-butterfly-graphic-for-crafts-and-decorations-png-image-16151116.png" 
+           alt="Mariposa" style="position:absolute; top:30px; left:30px; width:120px; height:auto;">
+
+      <!-- Imagen derecha -->
+      <img src="https://i.ibb.co/p6x2RD2B/silueta-quincea-era.png" 
+           alt="Quinceañera" style="position:absolute; top:30px; right:30px; width:120px; height:auto;">
 
       <div class="title">MIS 15 AÑOS</div>
       <div class="quinceañera-name">Lucciana</div>
@@ -212,18 +194,20 @@
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      document.getElementById("countdown").innerHTML = `
-        <div class="time-box"><span>${days}</span>Días</div>
-        <div class="time-box"><span>${hours}</span>Horas</div>
-        <div class="time-box"><span>${minutes}</span>Minutos</div>
-        <div class="time-box"><span>${seconds}</span>Segundos</div>
-      `;
+      document.getElementById("countdown").innerHTML = 
+        days + " días " + hours + " horas " + minutes + " minutos " + seconds + " segundos ";
 
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "¡La fiesta ha comenzado!";
       }
     }, 1000);
+  </script>
+</body>
+</html>
+
+
+    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
