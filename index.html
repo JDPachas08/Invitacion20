@@ -31,6 +31,7 @@
       padding: 50px;
       text-align: center;
       position: relative;
+      overflow: hidden;
     }
 
     .corner-icon {
@@ -128,6 +129,52 @@
       font-size: 1.1em;
     }
 
+    /* Imágenes decorativas */
+    .decor-img {
+      position: absolute;
+      top: 30px;
+      width: 120px;
+      height: auto;
+    }
+    .decor-left { left: 30px; }
+    .decor-right { right: 30px; }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .invitation-card {
+        padding: 30px 20px;
+      }
+      .title {
+        font-size: 2em;
+      }
+      .quinceañera-name {
+        font-size: 3em;
+      }
+      .subtitle {
+        font-size: 1.2em;
+      }
+      .details-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      .decor-img {
+        width: 80px;
+        top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 1.8em;
+      }
+      .quinceañera-name {
+        font-size: 2.5em;
+      }
+      .decor-img {
+        width: 60px;
+        top: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -140,11 +187,11 @@
 
       <!-- Imagen izquierda -->
       <img src="https://i.ibb.co/xkNd5xL/pngtree-hand-drawn-purple-butterfly-graphic-for-crafts-and-decorations-png-image-16151116.png" 
-           alt="Mariposa" style="position:absolute; top:30px; left:30px; width:120px; height:auto;">
+           alt="Mariposa" class="decor-img decor-left">
 
       <!-- Imagen derecha -->
       <img src="https://i.ibb.co/p6x2RD2B/silueta-quincea-era.png" 
-           alt="Quinceañera" style="position:absolute; top:30px; right:30px; width:120px; height:auto;">
+           alt="Quinceañera" class="decor-img decor-right">
 
       <div class="title">MIS 15 AÑOS</div>
       <div class="quinceañera-name">Lucciana</div>
@@ -166,7 +213,7 @@
         </div>
         <div class="detail-section">
           <div class="detail-title"><i class="fa-solid fa-location-dot"></i> Lugar</div>
-          <p>Local de Eventos "Maquia"<br>(frente al Malecón Miranda)</p>
+          <p>Local de Eventos "MAQIA"<br>(frente al Malecón Miranda)</p>
         </div>
         <div class="detail-section">
           <div class="detail-title"><i class="fa-solid fa-shirt"></i> Vestimenta</div>
